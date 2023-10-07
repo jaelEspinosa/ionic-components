@@ -1,0 +1,47 @@
+<app-header title = "date time"></app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Datos de Nacimiento</ion-label>
+    </ion-list-header>
+
+    <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime
+                  id="datetime"
+                  [value]="fechaNaci.toISOString()"
+                  display-format="DD MMMM YYYY"
+                  (ionChange) = "cambioFecha( $event )"
+                  ></ion-datetime>
+  </ng-template>
+</ion-modal>
+
+</ion-list>
+
+<ion-list>
+    <ion-list-header>
+      <ion-label>Restricciones</ion-label>
+      <ion-label>MIN y MAX</ion-label>
+    </ion-list-header>
+
+ <ion-datetime-button datetime="datetime2"></ion-datetime-button>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime id="datetime2"
+                  display-format="DD MMMM YYYY"
+                  min="2020-01-01"
+                  max="2025-12-31"
+                  ></ion-datetime>
+  </ng-template>
+</ion-modal>
+
+</ion-list>
+
+
+
+
+</ion-content>

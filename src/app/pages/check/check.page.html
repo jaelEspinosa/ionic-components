@@ -20,7 +20,16 @@
 </ion-list>
 
 <ion-button (click)="verData()" expand="block"  shape="round">
-  Ver Data
+  {{!showData ? 'Ver data' : 'Ocultar data'}}
 </ion-button>
+
+<div *ngIf="showData">
+  <ion-list>
+    <ion-item *ngFor="let item of data">
+      <ion-label>{{item.name}}---{{item.selected}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</div>
 
 </ion-content>

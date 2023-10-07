@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckPage implements OnInit {
 
+  public showData: boolean = false
   data= [
     {
       name: 'primary',
@@ -37,6 +38,7 @@ export class CheckPage implements OnInit {
 
   verData(){
     console.log( this.data )
+    this.showData = !this.showData
   }
 
 }

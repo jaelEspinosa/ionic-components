@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { InputPageRoutingModule } from './input-routing.module';
+import { ListPageRoutingModule } from './list-routing.module';
 
-import { InputPage } from './input.page';
+import { ListPage } from './list.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -15,9 +15,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
     FormsModule,
     IonicModule,
     ComponentsModule,
-    ReactiveFormsModule,
-    InputPageRoutingModule
+    ListPageRoutingModule
   ],
-  declarations: [InputPage]
+  declarations: [ListPage]
 })
-export class InputPageModule {}
+export class ListPageModule {}

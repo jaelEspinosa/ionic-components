@@ -17,6 +17,7 @@
 
 <form #formulario="ngForm" (ngSubmit)="onSubmit( formulario )">
 <ion-list-header>
+  <ion-card-subtitle>Template Form</ion-card-subtitle>
   <ion-title>Formulario Válido: {{ formulario.valid }}</ion-title>
 </ion-list-header>
 
@@ -51,6 +52,52 @@
  <ion-button type="submit" expand="block"  shape="round" [disabled]="!formulario.valid" class="ion-padding">
   Login
  </ion-button>
+</form>
+
+<form [formGroup]="myForm" (ngSubmit)="submitForm()">
+
+  <ion-list-header>
+    <ion-card-subtitle>Reactive Form</ion-card-subtitle>
+    <ion-title>Formulario Válido: {{ myForm.valid }}</ion-title>
+  </ion-list-header>
+
+  <ion-item>
+   <ion-input
+            type="text"
+            placeholder="Nombre"
+            label="Nombre: "
+            labelPlacement="floating"
+            formControlName="name"
+            >
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+             type="email"
+             placeholder="Email"
+             label="Email: "
+             labelPlacement="floating"
+             formControlName="email"
+             >
+     </ion-input>
+   </ion-item>
+
+   <ion-item>
+    <ion-input
+             type="password"
+             placeholder="Contraseña"
+             label="Contraseña: "
+             labelPlacement="floating"
+             formControlName="password"
+             >
+     </ion-input>
+   </ion-item>
+
+   <ion-button type="submit" expand="block"  shape="round" [disabled]="!myForm.valid" class="ion-padding">
+    Login
+   </ion-button>
+
 </form>
 
 

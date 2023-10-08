@@ -12,6 +12,7 @@ export class AlertPage implements OnInit {
 
   public alertController = inject ( AlertController)
 
+
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Alert',

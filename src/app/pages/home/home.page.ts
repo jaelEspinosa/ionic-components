@@ -55,7 +55,16 @@ export class HomePage implements OnInit {
       name: 'Fab',
       redirectTo: '/fab'
     },
-
+    {
+      icon: 'grid-outline',
+      name: 'grid',
+      redirectTo: '/grid'
+    },
+    {
+      icon: 'infinite-outline',
+      name: 'infinite',
+      redirectTo: '/infinite'
+    },
   ]
 
   constructor() { }

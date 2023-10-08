@@ -63,7 +63,13 @@ export class AlertPage implements OnInit {
         {
           name:'name',
           placeholder: 'Name',
-          type:'text'
+          type:'text',
+        },
+        {
+          name:'email',
+          placeholder: 'Email',
+          type:'email',
+
         },
         {
           placeholder: 'Nickname (max 8 characters)',

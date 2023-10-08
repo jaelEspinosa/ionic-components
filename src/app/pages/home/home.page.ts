@@ -65,6 +65,11 @@ export class HomePage implements OnInit {
       name: 'infinite',
       redirectTo: '/infinite'
     },
+    {
+      icon: 'hammer-outline',
+      name: 'inputs forms',
+      redirectTo: '/input'
+    },
   ]
 
   constructor() { }

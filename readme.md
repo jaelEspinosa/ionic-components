@@ -21,6 +21,9 @@ Para visualizar el contenido de la app en modo local es recomendable poner el na
 
 - ion serve
 
+## App
 
+<div style="display:flex; flex-direction: row; justify-content:flex-start; align-items:center; gap: 5px">
+<img alt='app' src='./src/assets/appcomponents.jpg'  />
 
-
+</div>

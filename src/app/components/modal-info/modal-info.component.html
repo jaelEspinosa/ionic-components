@@ -1,0 +1,54 @@
+<ion-header [translucent]="true" class="ion-padding">
+ {{nombre}}
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label>{{email}}</ion-label>
+  </ion-item>
+
+
+
+  <form [formGroup]="myForm" (ngSubmit)="salirConArgumentos()">
+
+    <ion-list-header>
+
+      <ion-title>Rellene los datos</ion-title>
+    </ion-list-header>
+
+    <ion-item>
+     <ion-input
+              type="text"
+              placeholder="Nombre"
+              label="Nombre: "
+              labelPlacement="floating"
+              formControlName="name"
+              >
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+               type="email"
+               placeholder="Email"
+               label="Email: "
+               labelPlacement="floating"
+               formControlName="email"
+               >
+       </ion-input>
+     </ion-item>
+
+
+
+     <ion-button type="submit" expand="block"  shape="round" [disabled]="!myForm.valid" class="ion-padding">
+      enviar
+     </ion-button>
+     <ion-button (click)="salirSinArgumentos()" shape="round" expand="block" class="ion-padding" color="danger" >
+      Cancelar
+    </ion-button>
+
+
+  </form>
+
+</ion-content>

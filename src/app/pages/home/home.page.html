@@ -1,21 +1,61 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+
+    <!-- componente de menu con todas las funciones implementadas -->
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" color="primary"></ion-menu-button>
+    </ion-buttons>
+
+    <!-- !! manera 'Complicada' de hacer funcionar al menu -->
+    <!-- <ion-buttons slot="start">
+      <ion-button (click)="menuShow()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+
     <ion-title color="primary">Componentes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
- <ion-list>
-  <ion-item *ngFor="let component of componentes"
-            [routerLink]="component.redirectTo"
+ <!-- <ion-list>
+  <ion-item *ngFor="let c of componentes | async"
+            [routerLink]="c.redirectTo"
             detail
     >
-    <ion-icon color="primary" [name]="component.icon" slot="start"></ion-icon>
-    {{component.name | titlecase}}
+    <ion-icon color="primary" [name]="c.icon" slot="start"></ion-icon>
+    {{c.name | titlecase}}
   </ion-item>
 
- </ion-list>
+ </ion-list> -->
+<div class="home-contain">
+  <ion-row>
+    <ion-col size="12" sizeSm="4">
 
+      <ion-card mode="ios" class="ion-padding">
+        <ion-card-header>
+          <ion-card-subtitle color="secondary">Clickea en el menu</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+
+          <ion-img src="/assets/ionic-logo.png"></ion-img>
+
+          <ion-img src="/assets/Angular_full_color_logo.svg.png"></ion-img>
+          <ion-item>
+
+          </ion-item>
+
+        </ion-card-content>
+
+      </ion-card>
+
+    </ion-col>
+  </ion-row>
+
+
+
+</div>
 
 </ion-content>

@@ -1,0 +1,23 @@
+
+<app-header title="modal"></app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-button (click)="modalShow()" expand="block"  shape="round">
+    MOSTRAR MODAL
+  </ion-button>
+<ion-item *ngIf="data">
+
+  <ion-card>
+    <ion-card-title>Datos del Modal</ion-card-title>
+    <ion-card-content>
+
+
+        <ion-label>Nombre: {{data.name}}</ion-label>
+        <ion-label>Email: {{data.email}}</ion-label>
+
+    </ion-card-content>
+
+  </ion-card>
+</ion-item>
+</ion-content>

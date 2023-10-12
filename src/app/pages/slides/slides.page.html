@@ -1,0 +1,26 @@
+
+
+<ion-content [fullscreen]="true">
+
+
+
+  <swiper-container pagination="true" class="slide-full" class="ion-padding" loop="true">
+
+    <swiper-slide *ngFor="let slide of slides">
+
+            <img [src]="slide.img" class="image-image"/>
+
+              <h3>{{ slide.titulo }}</h3>
+
+              <h5>{{ slide.desc}}</h5>
+
+    </swiper-slide>
+    <swiper-slide>
+      <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+        <h2>Volver al inicio</h2>
+      </ion-button>
+    </swiper-slide>
+
+  </swiper-container>
+
+</ion-content>

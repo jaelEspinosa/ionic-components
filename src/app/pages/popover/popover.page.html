@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+   <ion-buttons slot="start">
+    <ion-back-button defaultHref="/"></ion-back-button>
+   </ion-buttons>
+
+   <ion-buttons slot="end">
+    <ion-button (click)="presentPopover($event)">
+    <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+    </ion-button>
+   </ion-buttons>
+
+    <ion-title>popover</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="onClick($event)" expand="block"  shape="round" class="ion-padding">
+    Click me
+  </ion-button>
+ <ion-label *ngIf="itemSelected" class="ion-padding"> Has seleccionado el item: {{itemSelected}}</ion-label>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="presentPopover($event)">
+      <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+     </ion-buttons>
+
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -20,7 +20,7 @@ Para visualizar el contenido de la app en modo local es recomendable poner el
 navegador con vista de dispositivo movil en las dev tools y ejecutar el comando 
 en consola:
 
-"ion serve"
+"ionic serve"
 
 Para tener una visión de como se veria en android e ios puedes poner en consola 
 el siguiente comando:

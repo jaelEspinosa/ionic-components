@@ -15,10 +15,14 @@ Se trata de una app en Ionic que recoge la mayoria de componentes de este Framew
  - y muchos más...
 
 ```
-Para visualizar el contenido de la app en modo local es recomendable poner el navegador con vista de dispositivo movil en las dev tools y ejecutar el comando en consola:
+Para visualizar el contenido de la app en modo local es recomendable poner el 
+navegador con vista de dispositivo movil en las dev tools y ejecutar el comando 
+en consola:
+
 "ion serve"
 
-Para tener una visión de como se veria en android e ios puedes poner en consola el siguiente comando:
+Para tener una visión de como se veria en android e ios puedes poner en consola 
+el siguiente comando:
 
 "ionic serve --lab"
 

@@ -23,7 +23,7 @@ Para tener una visión de como se veria en android e ios puedes poner en consola
 "ionic serve --lab"
 
 a la pregunta si deseas instalar "lab" contestamos "yes" y listo. 
-Automáticamente en nuestro navegador veremos algo asi:
+Automáticamente en nuestro navegador veremos algo así:
 
 ```
 <div style="display:flex; flex-direction: row; justify-content:flex-start; align-items:center; gap: 5px">

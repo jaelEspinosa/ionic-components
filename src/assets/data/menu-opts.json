@@ -110,6 +110,11 @@
     "icon": "albums-outline",
     "name": "tabs",
     "redirectTo": "/tabs"
+  },
+  {
+    "icon": "pricetag-outline",
+    "name": "toast",
+    "redirectTo": "/toast"
   }
 
 ]

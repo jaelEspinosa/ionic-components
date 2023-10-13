@@ -1,0 +1,22 @@
+<app-header title="toast"></app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button (click)="onClick('top')" expand="block"  shape="round" class="ion-padding">
+    Show Toast at top
+  </ion-button>
+  <ion-button (click)="onClick('middle')" expand="block"  shape="round" class="ion-padding">
+    Show Toast at midle
+  </ion-button>
+  <ion-button (click)="onClick('bottom')" expand="block"  shape="round" class="ion-padding">
+    Show Toast at bottom
+  </ion-button>
+
+  <ion-button (click)="presentToastWithOpts('middle')" expand="block"  shape="round" class="ion-padding">
+    Show Toast with options
+  </ion-button>
+
+
+  <ion-item *ngIf="clickedOpt" class="ion-padding">
+    <ion-label>Clicked the <strong>{{clickedOpt}}</strong> button</ion-label>
+  </ion-item>
+</ion-content>

@@ -105,6 +105,11 @@
     "icon": "albums-outline",
     "name": "slides",
     "redirectTo": "/slides"
+  },
+  {
+    "icon": "albums-outline",
+    "name": "tabs",
+    "redirectTo": "/tabs"
   }
 
 ]

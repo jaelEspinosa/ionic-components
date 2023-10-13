@@ -5,7 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Colección de Componentes
 
 ```
-Se trata de una app en Ionic que recoge la mayoria de componentes de este Framework a modo de documentación:
+Se trata de una app en Ionic que recoge la mayoria de componentes de este Framework 
+a modo de documentación:
 
 ```
  - ion-action-sheet
